@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import './App.module.css';
 import Feedback from "../Feedback/Feedback.jsx";
 import Descriptions from "../Description/Description.jsx";
 import Options from "../Options/Options.jsx";
