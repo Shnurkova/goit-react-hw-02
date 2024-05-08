@@ -1,0 +1,12 @@
+.options_list{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+
+.options_btn{
+    border-radius: 3px;
+    color: chocolate;
+    padding: 6px;
+}

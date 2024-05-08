@@ -1,8 +1,11 @@
-export default function Options({updateFeedback, total, setState}) {
+import css from './Options.module.css'
+
+export default function Options({ updateFeedback, total, setState }) {
     return (
-        <ul>
+        <ul className={css.options_list}>
             <li>
             <button
+                className={css.options_btn}
                 onClick={() => {
                 updateFeedback('good');
             }}
@@ -12,6 +15,7 @@ export default function Options({updateFeedback, total, setState}) {
             </li>
             <li>
             <button
+                className={css.options_btn}
                 onClick={() => {
                     updateFeedback('neutral');
                 }}
@@ -20,6 +24,7 @@ export default function Options({updateFeedback, total, setState}) {
             </button>
             </li>
             <li><button
+                className={css.options_btn}
                 onClick={() => {
                     updateFeedback('bad');
                 }}
@@ -29,6 +34,7 @@ export default function Options({updateFeedback, total, setState}) {
             </li>
             {total > 0 &&(
                 <li><button
+                    className={css.options_btn}
                     onClick={() => {
                         setState({
                 good: 0,

@@ -46,9 +46,7 @@ a {
 
 button {
     cursor: pointer;
-    background-color: rebeccapurple;
-    color: aquamarine;
-
+    color: currentColor;
 }
 
 img {
