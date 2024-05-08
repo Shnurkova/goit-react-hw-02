@@ -1,0 +1,12 @@
+.container_descr{
+    text-align: left;
+}
+
+.container_title{
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.container_text{
+    font-weight: 400;
+}
