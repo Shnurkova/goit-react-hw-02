@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.module.css';
 import Feedback from "../Feedback/Feedback.jsx";
-import Descriptions from "../Description/Description.jsx";
+import Description from "../Description/Description.jsx";
 import Options from "../Options/Options.jsx";
 import Notification from '../Notification/Notification.jsx';
 
@@ -36,7 +36,7 @@ function App() {
 
     return (
         <>
-            <Descriptions />
+            <Description />
             <Options
             updateFeedback={updateFeedback}
             total={totalFeedback}
