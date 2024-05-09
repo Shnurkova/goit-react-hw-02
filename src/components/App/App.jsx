@@ -8,6 +8,7 @@ import Notification from '../Notification/Notification.jsx';
 
 
 function App() {
+  const startFeedback = { good: 0, neutral: 0, bad: 0 };
 
     const [states, setState] = useState(() => {
     const savedStates = window.localStorage.getItem('saved-states');
@@ -16,6 +17,10 @@ function App() {
     }
     return { good: 0, neutral: 0, bad: 0 };
     });
+  
+  const feedbackReset = () => {
+    setState(startFeedback);
+  };
 
     useEffect(() => {
     window.localStorage.setItem('saved-states', JSON.stringify(states));
@@ -40,7 +45,7 @@ function App() {
             <Options
             updateFeedback={updateFeedback}
             total={totalFeedback}
-            setState={setState}/>
+            feedbackReset={feedbackReset}/>
             {totalFeedback > 0 ? (
         <Feedback
           good={good}

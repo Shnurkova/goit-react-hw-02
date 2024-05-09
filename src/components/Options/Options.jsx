@@ -1,6 +1,6 @@
 import css from './Options.module.css'
 
-export default function Options({ updateFeedback, total, setState }) {
+export default function Options({ updateFeedback, total, feedbackReset }) {
     return (
         <div className={css.options_list}>
             <button
@@ -30,13 +30,7 @@ export default function Options({ updateFeedback, total, setState }) {
             {total > 0 && (
                 <button
                     className={css.options_btn}
-                    onClick={() => {
-                        setState({
-                good: 0,
-                neutral: 0,
-                bad: 0,
-              });
-                    }}
+                    onClick={feedbackReset}
                 >
                     Reset
                 </button>
